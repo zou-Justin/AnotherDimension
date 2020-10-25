@@ -6,7 +6,7 @@ public class Tester{
                   { -5, -2,  2, -9 }
                };
 int[]  B  =   {  1, 3, 5 };
-    System.out.println(ArrayOps.sum(B));
+    System.out.println( Arrays.toString(ArrayOps.sumRows(A))); 
     System.out.println((ArrayOps.largest(B)));
   }
 }
