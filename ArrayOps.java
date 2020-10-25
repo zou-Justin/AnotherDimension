@@ -57,5 +57,14 @@ public static  int sum(int[][] arr) {
     }
     return sum2;
   }
+  public static boolean isRowMagic(int[][] matrix) {
+    int[] max = sumRows(matrix);
+    for (int i = 0; i < max.length-1;i++){
+      if (max[i] != max[i+1]){
+        return false;
+      }
+    }
+    return true;
+ }
 
 }
