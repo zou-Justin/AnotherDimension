@@ -9,6 +9,7 @@ int[]  B  =   {  1, 3, 5 };
     System.out.println( Arrays.toString(ArrayOps.sumRows(A)));
     System.out.println((ArrayOps.largest(B)));
     System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
-    System.out.println( ArrayOps.sum(A));
+    System.out.println(ArrayOps.sum(A));
+    System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
   }
 }

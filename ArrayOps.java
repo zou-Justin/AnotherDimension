@@ -46,5 +46,16 @@ public static  int sum(int[][] arr) {
     }
     return sum;
   }
+  public static int[] sumCols(int[][] matrix) {
+    int[] sum1 = new int[matrix.length];
+    int[] sum2 = new int[matrix[0].length];
+    for (int i = 0; i < matrix[0].length;i++){
+      for (int j = 0; j < matrix.length;j++){
+        sum1[j] = matrix[j][i];
+      }
+        sum2[i] = sum(sum1);
+    }
+    return sum2;
+  }
 
 }
