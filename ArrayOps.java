@@ -75,5 +75,10 @@ public static boolean isColMagic(int[][] matrix) {
     }
     return true;
   }
-
+  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+    if (sum(matrix[row])== (sumCols(matrix))[col]){
+      return true;
+    }
+    return false;
+    }
 }
