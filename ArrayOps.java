@@ -66,5 +66,14 @@ public static  int sum(int[][] arr) {
     }
     return true;
  }
+public static boolean isColMagic(int[][] matrix) {
+    int[] max = sumCols(matrix);
+    for (int i = 0;i < max.length-1;i++){
+      if (max[i] != max[i+1]){
+        return false;
+      }
+    }
+    return true;
+  }
 
 }
